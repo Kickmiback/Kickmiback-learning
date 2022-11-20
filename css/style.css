@@ -584,7 +584,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1500px;
+    max-width: 1249px;
     margin: 0 auto;
 }
 
@@ -680,7 +680,8 @@
 }
 
 .feedback__header {
-    margin-bottom: 67px;
+    max-width: 752px;
+    margin-bottom: 77px;
 }
 
 .feedback__hearding {
@@ -693,10 +694,25 @@
 }
 
 .feedback__about {
+    font-family: 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
     box-sizing: border-box;
-    width: 450px;
     margin: 0;
-    margin-bottom: 39px;
+    margin-bottom: 50px;
+}
+
+.feedback__body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feedback__form {
+    width: 731px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .feedback__name {
@@ -708,7 +724,7 @@
     border: none;
     border-radius: 5px;
     padding-left: 50px;
-    margin-right: 54px;
+    margin-right: 53px;
     margin-bottom: 44px;
     font-size: 16px;
 }
@@ -740,8 +756,8 @@
     font-family: 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
     resize: none;
-    width: 730px;
-    height: 230px;
+    width: 731px;
+    height: 239px;
     border: none;
     padding: 31px 51px;
     background-color: rgba(0, 0, 0, 0.1);
@@ -756,7 +772,7 @@
 
 .contacts {
     width: 315px;
-    padding: 141px 17px 141px 81px;
+    padding: 141px 17px 141px 79px;
 }
 
 .contacts__heading {
@@ -770,6 +786,7 @@
 
 .contacts__address {
     font-family: 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.75;
     font-size: 18px;
     margin: 0;
     margin-bottom: 27px;
@@ -789,4 +806,36 @@
     font-family: 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #fff;
     margin: 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #313030;;
+    padding: 0 1vw;
+}
+
+.footer__content {
+    box-sizing: border-box;
+    padding: 19px 0 0;
+    color: #e0e0e0;
+    align-items: center;
+    min-height: 110px;
+    background-color: #2c2c2c;
+}
+
+.footer__coperight {
+    margin: 0;
+    line-height: 1.75;
+}
+
+.footer__social-link {
+    display: block;
+}
+
+.social__link {
+    display: inline-block;
+}
+
+.footer__social-link > .social__link:not(:last-child) {
+    margin-right: 18px;
 }
