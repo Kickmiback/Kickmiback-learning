@@ -164,7 +164,7 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 800px) and (max-width: 1240px) {
+@media screen and (min-width: 800px) and (max-width: 1240px) {
     .intro {
         flex-wrap: nowrap;
     }
@@ -724,14 +724,19 @@
 
 /* Get in touch */
 .feedback {
-    width: 1249px;
+    width: 100%;
     margin: 0 auto;
     padding: 104px 0 107px;
 }
 
 .feedback__header {
-    max-width: 752px;
+    max-width: 1249px;
+    margin: 0 auto;
     margin-bottom: 77px;
+}
+
+.feedback__search {
+    max-width: 752px;
 }
 
 .feedback__hearding {
@@ -754,7 +759,7 @@
 
 .feedback__body {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
 }
 
@@ -779,7 +784,7 @@
     font-size: 16px;
 }
 
-.feedback__email {
+.feedback__emailec {
     font-family: 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-sizing: border-box;
     width: 339px;
@@ -841,7 +846,6 @@
     margin: 0;
     margin-bottom: 27px;
 }
-
 
 .contacts__email {
     display: block;
