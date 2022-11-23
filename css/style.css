@@ -724,7 +724,7 @@
 
 /* Get in touch */
 .feedback {
-    width: 100%;
+    width: 1249px;
     margin: 0 auto;
     padding: 104px 0 107px;
 }
@@ -759,8 +759,18 @@
 
 .feedback__body {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.feedback__body::before {
+    content: '';
+    flex: 1 1 auto;
+}
+
+.feedback__body::after {
+    content: '';
+    flex: 1 1 auto;
 }
 
 .feedback__form {
@@ -768,6 +778,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-right: 107px;
 }
 
 .feedback__name {
@@ -827,7 +838,7 @@
 
 .contacts {
     width: 315px;
-    padding: 141px 17px 141px 79px;
+    padding: 127px 17px 141px 79px;
 }
 
 .contacts__heading {
