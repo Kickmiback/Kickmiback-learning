@@ -667,7 +667,6 @@
 .subscribe__heading {
     font-family: 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #fff;
-    opacity: 0.8;
     text-transform: none;
     margin-bottom: 15px
 }
@@ -677,7 +676,6 @@
     margin: 0;
     line-height: 1.75;
     color: #fff;
-    opacity: 0.8;
     margin-bottom: 50px;
 }
 
@@ -690,7 +688,7 @@
 
 .subscribe__input {
     font-family: 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #8e8e8e;
+    color: #ffff;
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -703,7 +701,6 @@
     border-radius: 5px;
     margin-right: 22px;
     margin-bottom: 15px;
-    background-color: #fff
 }
 
 .subscribe__button {
@@ -737,6 +734,7 @@
 
 .feedback__search {
     max-width: 752px;
+
 }
 
 .feedback__hearding {
@@ -759,11 +757,17 @@
 
 .feedback__body {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
     display: grid;
     grid-template-columns: 1fr 731px 107px 411px 1fr;
     grid-template-rows: auto;
+}
+
+.feedback__body::after {
+    content: '';
+    background-color: #313030;
+    grid-column: 5 /6;
 }
 
 .feedback__form {
@@ -771,6 +775,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-right: 107px;
+    grid-column: 2 / 3;
 }
 
 .feedback__name {
@@ -825,7 +831,7 @@
 
 .feedback__contacts {
     color: #fff;
-    background-color: #2D2D2D;
+    background-color: #313030;
     grid-column: 4 / 5;
 }
 
