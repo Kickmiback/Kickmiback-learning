@@ -816,7 +816,7 @@
 }
 
 .feedback__form {
-    width: 731px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -943,12 +943,15 @@
     width: 100%;
    }
     .feedback__contacts {
-    grid-column: 2 / 3;
+    grid-column: 1 / 3;
+   }
+   .feedback {
+    padding-bottom: 0;
    }
    .contacts {
-    width: auto;
+    width: 100%;
+    margin-left: -12px;
    }
-
 }
 
 /* Footer */
