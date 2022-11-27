@@ -72,11 +72,10 @@
 
 .page__inner {
     display: block;
-    width: 100%;
 }
 
 .page__inner_intro {
-    padding: 0;
+    padding: 0 1vw;
     padding-top: 29px;
 }
 
@@ -89,9 +88,15 @@
 }
 
 .page__inner_section {
-    padding: 0;
+    padding: 0 1vw;
     padding-top: 75px;
     padding-bottom: 110px;
+}
+
+@media screen and (max-width: 412px) and (max-width: 800px) and (max-width: 1024px) and (max-width: 1240px) {
+    .page__inner_section {
+        padding-top: 10px;
+    }
 }
 
 .page__header {
@@ -196,7 +201,7 @@
 @media screen and (max-width: 800px) {
     .intro__info {
         width: 100%;
-        margin-bottom: 80px;
+        margin-bottom: 15px;
         max-width: -webkit-fill-available;
     }
 }
@@ -297,12 +302,18 @@
     display: flex;
     max-width: 1249px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 2vw;
     padding-top: 107px;
     padding-bottom: 50px;
     border-bottom: 2px solid #ECECEC;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 800px) {
+    .services {
+        padding-top: 30px;
+    }
 }
 
 .services__info {
@@ -414,6 +425,7 @@
 
 .feature__header {
     margin-bottom: 88px;
+    padding: 0 1vw;
 }
 
 .feature__heading {
@@ -459,6 +471,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 58px;
+    padding: 0 3vw;
 }
 
 .filter__list {
@@ -496,7 +509,7 @@
 }
 
 .feature__product {
-    width: 297px;
+    width: 254px;
     object-fit: cover;
     object-position: 45% 0%;
     flex: 1 1;
@@ -505,6 +518,7 @@
 @media screen and (max-width: 1240px) {
     .feature__products {
         max-width: 100%;
+        min-width: fit-content;
     }
 }
 
@@ -522,6 +536,7 @@
 
 .team__header {
     margin-bottom: 67px;
+    padding: 0 2vw;
 }
 
 .team__heading {
@@ -587,6 +602,7 @@
 
 .team__lead-main {
     max-width: 633px;
+    padding: 0 2vw;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     position: relative;
@@ -685,6 +701,7 @@
     }  
     .team__lead-photo {
         grid-row: auto;
+        width: 280px;
     }
     .team__lead-main {
         grid-column: 1 / 2;
@@ -721,6 +738,7 @@
 .subscribe__header {
     max-width: 1249px;
     margin: 0 auto;
+    padding: 0 2vw;
     text-align: center;
 }
 
@@ -802,6 +820,7 @@
     max-width: 1249px;
     margin: 0 auto;
     margin-bottom: 77px;
+    padding: 0 2vw;
 }
 
 .feedback__search {
@@ -970,7 +989,7 @@
    }
     .feedback__contacts {
     grid-column: 1 / 3; 
-    padding: 127px 0px 141px 0px;
+    max-width: -webkit-fill-available;
    }
    .feedback {
     padding-bottom: 0;
