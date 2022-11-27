@@ -702,6 +702,7 @@
     .team__lead-photo {
         grid-row: auto;
         width: 280px;
+        height: 321px;
     }
     .team__lead-main {
         grid-column: 1 / 2;
@@ -775,7 +776,6 @@
 
 .subscribe__input {
     font-family: 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #ffff;
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -877,7 +877,7 @@
     background-color: rgba(0, 0, 0, 0.1);
     border: none;
     border-radius: 5px;
-    padding-left: 50px;
+    padding: 31px 51px;
     margin-right: 53px;
     margin-bottom: 44px;
     font-size: 16px;
@@ -891,7 +891,7 @@
     background-color: rgba(0, 0, 0, 0.1);
     border: none;
     border-radius: 5px;
-    padding-left: 48px;
+    padding: 31px 51px;
     margin-bottom: 44px;
 }
 
@@ -988,8 +988,9 @@
     width: 100%;
    }
     .feedback__contacts {
-    grid-column: 1 / 3; 
+    grid-column: 4 / 1; 
     max-width: -webkit-fill-available;
+    padding: 127px 1px 141px 43px;
    }
    .feedback {
     padding-bottom: 0;
@@ -1002,7 +1003,7 @@
 /* Footer */
 .footer {
     background-color: #313030;;
-    padding: 0;
+    padding: 0 2vw;
 }
 
 .footer__content {
@@ -1023,6 +1024,7 @@
     display: block;
     display: flex;
     gap: 18px;
+    margin-top: 12px;
 }
 
 .social__link {
