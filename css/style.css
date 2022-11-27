@@ -208,7 +208,7 @@
 
 .intro__heading {
     font-family: 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 60px;
+    font-size: clamp(2em, 2em + 2vw, 60px);
     font-variation-settings: "wght" 800;
     line-height: 1.2;
     font-weight: 800;
@@ -219,9 +219,6 @@
 }
 
 @media screen and (max-width: 800px) {
-    .intro__heading {
-        font-size: 40px;
-    }
     .action-link {
         width: 185px;
     }
@@ -325,7 +322,7 @@
     margin: 0;
     margin-bottom: 50px;
     display: flex;
-    font-size: 42px;
+    font-size: clamp(2em, 2em + 2vw, 48px);
     font-weight: 700;
     line-height: 55px;
     letter-spacing: 0.5;
@@ -431,8 +428,8 @@
 .feature__heading {
     font-family: 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
+    font-size: clamp(2em, 2em + 2vw, 48px);
     margin-bottom: 20px;
-    font-size: 42px;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.3834px;
@@ -509,9 +506,9 @@
 }
 
 .feature__product {
-    width: 254px;
+    width: calc(100% / 2);
     object-fit: cover;
-    object-position: 45% 0%;
+    object-position: 45% 67%;
     flex: 1 1;
 }
 
@@ -531,7 +528,12 @@
     padding-bottom: 53px;
     text-align: left;
     max-width: 1249px;
+}
 
+@media screen and (max-width: 800px) {
+    .team {
+        padding-top: 0;
+    } 
 }
 
 .team__header {
@@ -541,7 +543,7 @@
 
 .team__heading {
     font-family: 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 42px;
+    font-size: clamp(2em, 2em + 2vw, 48px);
     font-weight: 700;
     margin: 0;
     margin-bottom: 25px;
@@ -649,6 +651,12 @@
     text-decoration: none;
 }
 
+@media screen and (max-width: 800px) {
+    .team__lead-link {
+        line-height: 0;
+    } 
+}
+
 .team__lead-link:hover {
     text-decoration: underline;
 }
@@ -701,8 +709,8 @@
     }  
     .team__lead-photo {
         grid-row: auto;
-        width: 280px;
-        height: 321px;
+        width: 210px;
+        height: 218px;
     }
     .team__lead-main {
         grid-column: 1 / 2;
@@ -725,6 +733,7 @@
     margin: 0 auto;
 }
 
+
 .subscribe {
     width: 100%;
     max-width: 100%;;
@@ -734,6 +743,12 @@
     box-sizing: border-box;
     display: block;
     text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+    .section {
+        padding: 90px 0 90px;
+    } 
 }
 
 .subscribe__header {
@@ -755,6 +770,7 @@
 .subscribe__heading {
     font-family: 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #fff;
+    font-size: clamp(2em, 2em + 2vw, 48px);
     text-transform: none;
     margin-bottom: 15px
 }
@@ -789,6 +805,12 @@
     margin-right: 22px;
     margin-bottom: 15px;
     margin-left: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .subscribe__input {
+        padding-right: 0px;
+    } 
 }
 
 .subscribe__button {
@@ -829,7 +851,7 @@
 
 .feedback__hearding {
     font-family: 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 42px;
+    font-size: clamp(2em, 2em + 2vw, 48px);
     font-weight: 700;
     margin: 0;
     margin-bottom: 35px;
@@ -990,10 +1012,12 @@
     .feedback__contacts {
     grid-column: 4 / 1; 
     max-width: -webkit-fill-available;
-    padding: 127px 1px 141px 43px;
+    padding: 127px 1px 141px 20px;
+    font-size: clamp(1em, 1em + 1vw, 10px);
    }
    .feedback {
     padding-bottom: 0;
+    padding-top: 50px;
    }
    .contacts {
     width: 100%;
