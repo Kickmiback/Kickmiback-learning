@@ -894,12 +894,6 @@
     margin-left: 20px;
 }
 
-@media screen and (max-width: 800px) {
-    .subscribe__input {
-        padding-right: 0px;
-    } 
-}
-
 .subscribe__button {
     font-family: 'Open Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
