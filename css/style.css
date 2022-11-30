@@ -586,7 +586,6 @@
 }
 
 .feature__product {
-    width: calc(100% / 2);
     object-fit: cover;
     object-position: 45% 67%;
     flex: 1 1;
