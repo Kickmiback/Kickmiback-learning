@@ -88,7 +88,7 @@
 }
 
 .page__inner_section {
-    padding: 0 1vw;
+    padding: 0 2vw;
     padding-top: 75px;
     padding-bottom: 110px;
 }
@@ -170,7 +170,7 @@
     background-color: #ff3f40;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 799px) {
     .site-menu {
         display: none;
     }
@@ -253,20 +253,20 @@
 .intro {
     display: flex;
     flex-wrap: wrap;
+    padding: 0px 2vw;
     max-width: 1249px;
     margin: 0 auto;
     justify-content: space-between;
 }
 
-@media screen and (min-width: 800px) and (max-width: 1240px) {
+/* @media screen and (min-width: 800px) and (max-width: 1240px) {
     .intro {
         flex-wrap: nowrap;
     }
-}
+} */
 
 .intro__info {
     max-width: 595px;
-    margin-left: 2vw;
 }
 
 @media screen and (max-width: 1240px) {
@@ -582,7 +582,8 @@
 .feature__products {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
+    padding: 0px 1vw;
 }
 
 .feature__product {
@@ -594,7 +595,6 @@
 @media screen and (max-width: 1240px) {
     .feature__products {
         max-width: 100%;
-        min-width: fit-content;
     }
 }
 
@@ -617,7 +617,7 @@
 
 .team__header {
     margin-bottom: 67px;
-    padding: 0 2vw;
+    padding: 0 1vw;
 }
 
 .team__heading {
@@ -642,6 +642,7 @@
 .team__members {
     display: flex;
     display: grid;
+    padding: 0 1vw;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
     justify-content: space-between;
@@ -683,7 +684,7 @@
 
 .team__lead-main {
     max-width: 633px;
-    padding: 0 2vw;
+    padding: 0;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     position: relative;
@@ -1004,6 +1005,7 @@
     border: none;
     border-radius: 5px;
     background-color: #FF3B3B;
+    text-transform: uppercase;
     font-size: 18px;
     color: #fff;
 }
