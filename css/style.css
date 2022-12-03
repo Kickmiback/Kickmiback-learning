@@ -125,6 +125,18 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* @media screen and (max-width: 800px) {
+    .header {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+   }
+    .page__inner_header {
+        padding-top: 40px;
+
+}
+}  */
+
 .site-menu {
     padding-right: 30px;
 }
@@ -390,11 +402,14 @@
     flex-wrap: wrap;
 }
 
+
 @media screen and (max-width: 800px) {
     .services {
         padding-top: 30px;
+        
     }
 }
+
 
 .services__info {
     width: 539px;
@@ -428,6 +443,12 @@
     flex-wrap: wrap;
     gap: 25px 25px;
     width: 610px;
+}
+
+@media screen and (max-width: 800px) {
+    .services__items {
+    justify-content: flex-start;  
+    }
 }
 
 .services__item {
